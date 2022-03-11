@@ -1,0 +1,20 @@
+
+name: Maven Package
+on:
+  push:
+    branches: [ master ] 
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        path:path: 3.multi-module-maven-project
+        
+    - run: |
+        ls
+        pwd
+    
